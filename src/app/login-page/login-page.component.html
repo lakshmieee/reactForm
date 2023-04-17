@@ -1,0 +1,27 @@
+<div class="container">
+    
+    <br><br>
+    <form [formGroup]="loginForm">
+    <div class="row ">
+        <div class="row col-sm-5 border">
+
+            <h2 class="text-center text-success header">LOGIN</h2>
+        <div class="form-group">
+            <label for="User Name">User Name</label>
+            <input type="text" class="form-control" formControlName="userName">
+            <span *ngIf="!loginForm.controls.userName?.valid && (loginForm.controls.userName?.dirty
+            ||loginForm.controls.userName?.touched)">***Please enter the User Name</span>
+        </div><br><br><br><br>
+        <div class="form-group">
+            <label for="Password">Password</label>
+            <input type="password" class="form-control"  formControlName="password">
+            <span *ngIf="!loginForm.controls.password?.valid && (loginForm.controls.password?.dirty
+            ||loginForm.controls.password?.touched)">***Please enter the User Name</span>
+        </div><br><br><br>
+        <a class="text-decoration-none">Change password</a>
+        <button class="btn btn-success col-sm-5 my-5" [disabled]="!loginForm.valid">login</button>
+
+    </div>
+    </div>
+</form>
+</div>

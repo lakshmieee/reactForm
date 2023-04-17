@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="body">
+        <p class="happy"><span id="hap"><br>Happiness </span><br>
+            <span class="grow">is growing your own</span>
+            <span class="food"> foods</span>
+        </p>
+    </div><br><hr><br>
+    <table class="table table-striped">
+        <tr>
+        <td>id</td>
+        <td>due_on</td>
+        <td>status</td>
+        <td>title</td>
+        <td>user_id</td>
+    </tr>
+    <tr *ngFor="let val of value">
+        <td>{{val.id}}</td>
+        <td>{{val.due_on}}</td>
+        <td>{{val.status}}</td>
+        <td>{{val.title}}</td>
+        <td>{{val.user_id}}</td>
+        
+    </tr>
+    </table>
+    </div>
+
+

@@ -1,0 +1,54 @@
+<div class="container"><br>
+    <h2 class="text-center text-success header">Registration Form</h2>
+    <form [formGroup]="registrationForm"  (ngSubmit)="onSubmit()">
+        <div class="row ">
+            <div class="row col-sm-6">     
+            <div class="form-group">
+                <label for="First Name">First Name</label>
+                <input type="text" class="form-control" formControlName="firstName"> 
+            </div>
+            <div class="form-group">
+                <label for="Last Name">Last Name</label>
+                <input type="text" class="form-control" formControlName="lastName"> 
+            </div>
+            <div class="form-group">
+                <label for="Email Id">Email Id</label>
+                <input type="text" class="form-control" formControlName="emailId"> 
+            </div>
+            <div class="form-group">
+                <label for="Contact No">Contact No</label>
+                <input type="text" class="form-control"  formControlName="contactNo">   
+            </div>
+            <div class="form-group">
+                <label for="DOB">DOB</label>
+                <input type="text" class="form-control"  formControlName="DOB">   
+            </div>
+        </div>
+
+        <div class="row col-sm-6">
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" class="form-control"  formControlName="address">   
+            </div><br><br><br>
+            <div class="form-group">
+                <label for="City">City</label>
+                <input type="text" class="form-control"  formControlName="city">   
+            </div><br><br><br>
+            <div class="form-group">
+                <label for="Pincode">Pincode</label>
+                <input type="text" class="form-control"  formControlName="pincode">   
+            </div><br><br><br>
+            <div class="form-group">
+                <label for="state">State</label>
+                <input type="text" class="form-control"  formControlName="state">   
+            </div><br><br><br>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" class="form-control"  formControlName="country">   
+            </div><br><br><br>
+           
+            <button class="btn btn-success col-sm-5 my-3" [disabled]="!registrationForm.valid">Registor</button>
+        </div>
+        </div>
+    </form>
+</div>

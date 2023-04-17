@@ -1,0 +1,32 @@
+
+
+
+header{
+    text-decoration: none;
+    background-color:rgb(111, 234, 111);
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:20px;
+}
+
+h3 {
+    font-size:30px;
+    text-decoration: none;
+    color:green;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left:20px;
+}
+a{
+text-decoration: none;
+margin: 10px;
+}
+
+
+
+
+
+
+
+
+

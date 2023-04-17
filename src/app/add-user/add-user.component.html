@@ -1,0 +1,22 @@
+<div class="container">
+    <form [formGroup]="userForm">
+        <div class="row ">
+            <div class="row col-sm-5 border">
+            
+            <div class="form-group">
+                <label for="name">User Name</label>
+                <input type="text" class="form-control" formControlName="name">
+                
+            </div>
+            <div class="form-group">
+                <label for="text">Job</label>
+                <input type="text" class="form-control"  formControlName="jobName">
+                
+            </div><br><br><br>
+            
+            <button class="btn btn-success col-sm-5 my-5" [disabled]="!userForm.valid" (click)="add()">Add User</button>
+    </div>
+</div></form>
+</div>
+
+
